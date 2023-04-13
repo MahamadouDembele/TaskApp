@@ -1,0 +1,16 @@
+<mat-card class="task-form">
+  <mat-card-title class="task-form__title">Ajouter une tâche</mat-card-title>
+  <mat-card-content>
+    <form [formGroup]="taskForm" class="task-form__form">
+      <mat-form-field class="task-form__field">
+        <input matInput placeholder="Titre" formControlName="title" required>
+      </mat-form-field>
+      <mat-form-field class="task-form__field">
+        <textarea matInput placeholder="Description" formControlName="description" required></textarea>
+      </mat-form-field>
+    </form>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button color="primary" class="task-form__submit" (click)="addTask()" [disabled]="taskForm.invalid">Ajouter</button>
+  </mat-card-actions>
+</mat-card>

@@ -1,0 +1,7 @@
+<mat-card class="task-view" *ngIf="task$ | async as task">
+  <mat-card-title class="task-view__title">{{ task.title }}</mat-card-title>
+  <mat-card-content>
+    <p class="task-view__description">{{ task.description }}</p>
+    <p> Date de creation {{task.dueDate | date: 'à HH:mm, le d MMMM yyyy'}}</p>
+  </mat-card-content>
+</mat-card>

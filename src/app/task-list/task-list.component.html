@@ -1,0 +1,10 @@
+<mat-card class="task-list-card" *ngFor="let task of tasks$ | async">
+  <mat-checkbox [(ngModel)]="task.completed" (ngModelChange)="onComplete(task.id, task.completed)" class="task-list__checkbox"></mat-checkbox>
+  <mat-card-header>
+    <mat-card-title class="task-list__title">{{ task.title }}</mat-card-title>
+  </mat-card-header>
+  <mat-card-actions>
+    <button mat-button (click)="onViewTask(task.id)" class="task-list__button">VOIR</button>
+    <button mat-button (click)="onDelete(task.id)" class="task-list__button">SUPPRIMER</button>
+  </mat-card-actions>
+</mat-card>

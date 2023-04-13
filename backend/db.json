@@ -1,0 +1,25 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Tache 1",
+      "description": "Acheter du pain",
+      "completed": 1,
+      "dueDate": "Mon Dec 13 2021 14:51:42 GMT+0100 (Central European Standard Time)"
+    },
+    {
+      "title": "Tache 3 ",
+      "description": "Faire les exos",
+      "completed": 0,
+      "dueDate": "2023-04-13T01:00:08.555Z",
+      "id": 3
+    },
+    {
+      "title": "Ma tache 4",
+      "description": "Acheter du pain",
+      "completed": 1,
+      "dueDate": "2023-04-13T01:01:27.647Z",
+      "id": 4
+    }
+  ]
+}
